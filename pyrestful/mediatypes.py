@@ -14,20 +14,9 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-import distutils.core
+# -*- coding: utf-8 -*-
 
-try:
-	import setuptools
-except ImportError:
-	pass
-
-packages=['tornado>=6.0.1','pyconvert']
-
-distutils.core.setup(
-	name='pyrestful',
-	version = '0.5.1',
-	packages=['pyrestful','demos','test'],
-	author='Innovaser',
-	author_email='rancavil@innovaser.cl',
-	install_requires=packages
-)
+APPLICATION_JSON = 'application/json'
+APPLICATION_XML  = 'application/xml'
+TEXT_XML = 'text/xml'
+TEXT_PLAIN = 'text/plain'

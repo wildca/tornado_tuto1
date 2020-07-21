@@ -13,21 +13,3 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 # License for the specific language governing permissions and limitations
 # under the License.
-
-import distutils.core
-
-try:
-	import setuptools
-except ImportError:
-	pass
-
-packages=['tornado>=6.0.1','pyconvert']
-
-distutils.core.setup(
-	name='pyrestful',
-	version = '0.5.1',
-	packages=['pyrestful','demos','test'],
-	author='Innovaser',
-	author_email='rancavil@innovaser.cl',
-	install_requires=packages
-)
